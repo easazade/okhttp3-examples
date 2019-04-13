@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
   }
 
+  //TODO go to below address for advanced examples
+  //https://www.baeldung.com/guide-to-okhttp
+
   fun reqResIn(v: View) {
     val intent = Intent(this,ReqResInActivity::class.java)
     startActivity(intent)

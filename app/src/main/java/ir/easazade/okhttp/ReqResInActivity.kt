@@ -21,6 +21,10 @@ import java.io.IOException
 
 class ReqResInActivity : AppCompatActivity() {
 
+
+  //TODO go to below address for advanced examples
+  //https://www.baeldung.com/guide-to-okhttp
+
   private lateinit var okHttpClient: OkHttpClient
   private var token = ""
 
@@ -29,6 +33,9 @@ class ReqResInActivity : AppCompatActivity() {
     setContentView(R.layout.activity_req_res_in)
     okHttpClient = createNewOkHttpClient(token)
   }
+
+  //TODO go to below address for advanced examples
+  //https://www.baeldung.com/guide-to-okhttp
 
   fun simpleGet(v: View) {
     val request = Request.Builder()
@@ -47,6 +54,9 @@ class ReqResInActivity : AppCompatActivity() {
       }
     })
   }
+
+  //TODO go to below address for advanced examples
+  //https://www.baeldung.com/guide-to-okhttp
 
   fun simplePost(v: View) {
     val JSON = MediaType.parse("application/json;charset=utf-8")
@@ -71,6 +81,9 @@ class ReqResInActivity : AppCompatActivity() {
       }
     })
   }
+
+  //TODO go to below address for advanced examples
+  //https://www.baeldung.com/guide-to-okhttp
 
   fun postFormData(v: View) {
     val requestBody = FormBody.Builder()
